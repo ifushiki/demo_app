@@ -1,4 +1,4 @@
 class Micropost < ApplicationRecord
-    attr_accessible :content, :user_id
+    attr_accessor :content, :user_id
     validates :content, :length => { :maximum => 140 }
 end
